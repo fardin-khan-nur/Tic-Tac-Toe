@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Tic Tac Toe - Epic Battle ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <div class="stars-background">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <header>
+        <div class="header-glow"></div>
+        <h1 class="title-animated">🎮 Tic Tac Toe 🎮</h1>
+        <p class="subtitle">Epic Battle Arena</p>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <div class="player-info">
+                <div class="player-card player-1">
+                    <div class="player-name-display"></div>
+                    <div class="player-symbol">X</div>
+                </div>
+                <div class="vs-text">VS</div>
+                <div class="player-card player-2">
+                    <div class="player-symbol">O</div>
+                    <div class="player-name-display"></div>
+                </div>
+            </div>
+
+            <div class="turn-indicator">
+                <p class="turn-message">Turn</p>
+            </div>
+
+            <div class="gameboard">
+                <div class="gamecell" data-position="0"></div>
+                <div class="gamecell" data-position="1"></div>
+                <div class="gamecell" data-position="2"></div>
+                <div class="gamecell" data-position="3"></div>
+                <div class="gamecell" data-position="4"></div>
+                <div class="gamecell" data-position="5"></div>
+                <div class="gamecell" data-position="6"></div>
+                <div class="gamecell" data-position="7"></div>
+                <div class="gamecell" data-position="8"></div>
+            </div>
+
+            <div class="button-container">
+                <button type="button" class="reset-btn">🔄 New Game</button>
+            </div>
+        </div>
+    </main>
+
+    <dialog class="names-dialog">
+        <form class="names-form">
+            <p class="names-title">🎯 Let's Start the Battle! 🎯</p>
+            <div class="input-group">
+                <label for="name1">⚔️ Player 1 Name:</label>
+                <input type="text" name="name1" id="name1" maxlength="15" placeholder="Enter your name" required>
+            </div>
+            <div class="input-group">
+                <label for="name2">🛡️ Player 2 Name:</label>
+                <input type="text" name="name2" id="name2" maxlength="15" placeholder="Enter your name" required>
+            </div>
+            <button type="button" class="start-btn">⚡ Start Battle ⚡</button>
+        </form>
+    </dialog>
+
+    <dialog class="result-dialog">
+        <div class="result-content">
+            <h1 class="result-message">Player Wins!</h1>
+            <button type="button" class="play-again-btn">Play Again</button>
+        </div>
+    </dialog>
+
+    <!-- Celebration Elements -->
+    <div class="celebration-container"></div>
+    <div class="confetti-container"></div>
+
+    <footer>
+        <p>Made with 💖 | Mad Man Devil</p>
+    </footer>
+</body>
+  </html>
